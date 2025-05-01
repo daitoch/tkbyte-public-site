@@ -1,12 +1,13 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '../components/Navbar';
+import '../styles/globals.css';
 
-export default function RootLayout({ children }) {
+function MyApp({ Component, pageProps }) {
   return (
-    <html>
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
   );
 }
+
+export default MyApp;

@@ -1,0 +1,28 @@
+import Link from 'next/link';
+
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo-container">
+        <Link href="/" className="logo">
+          <span className="code">CODE</span>
+          <span className="brew">BREW</span>
+          <span className="version">1.4.5</span>
+        </Link>
+      </div>
+      
+      <div className="nav-links">
+        <Link href="/products">Products</Link>
+        <Link href="/industries">Industries</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/resources">Resources</Link>
+        <Link href="/demos">Live Demos</Link>
+      </div>
+      
+      <Link href="/contact" className="cta-button">
+        Get In Touch →
+      </Link>
+    </nav>
+  );
+}

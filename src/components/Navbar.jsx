@@ -46,4 +46,21 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <d
+        <div className="md:hidden px-4 pb-4 space-y-2 bg-white">
+          <Link href="#">Products</Link>
+          <Link href="#">Industries</Link>
+          <Link href="#">Services</Link>
+          <Link href="#">Portfolio</Link>
+          <Link href="#">Resources</Link>
+          <Link href="#">Live Demos</Link>
+          <Link
+            href="#"
+            className="block mt-2 bg-lime-400 hover:bg-lime-500 text-white text-center font-semibold px-4 py-2 rounded-full transition"
+          >
+            Get In Touch
+          </Link>
+        </div>
+      )}
+    </header>
+  );
+}
